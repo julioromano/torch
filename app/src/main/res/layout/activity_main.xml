@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="activity"
+            type="net.kjulio.torch.ui.main.MainActivity" />
+
+    </data>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="0px"
+            android:layout_height="0px" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/togglebutton_background"
+            android:checked="@={activity.torchButton}"
+            android:onClick="@{()->activity.onClickTorchButton()}"
+            android:textOff=""
+            android:textOn="" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</layout>

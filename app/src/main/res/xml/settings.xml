@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key="pref_key_app_settings"
+        android:title="@string/pref_key_app_settings" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_nosleep"
+            android:summary="@string/pref_nosleep_summary"
+            android:title="@string/pref_nosleep" />
+
+        <ListPreference
+            android:defaultValue="@string/pref_startup_state_default"
+            android:dialogTitle="@string/pref_startup_state"
+            android:entries="@array/pref_startup_state_entries"
+            android:entryValues="@array/pref_startup_state_values"
+            android:key="pref_startup_state"
+            android:summary="@string/pref_startup_state_summary"
+            android:title="@string/pref_startup_state" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_background"
+            android:summary="@string/pref_background_summary"
+            android:title="@string/pref_background" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="pref_key_about_app"
+        android:title="@string/pref_key_about_app" >
+        <Preference
+            android:key="pref_pref_website"
+            android:summary="@string/app_website"
+            android:title="@string/pref_website" >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="@string/app_website" />
+        </Preference>
+        <Preference
+            android:key="pref_app_version"
+            android:summary="@string/versionName"
+            android:title="@string/app_about" >
+        </Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

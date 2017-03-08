@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Torch</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Torch</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="version">Version</string>
+
+    <string-array name="pref_startup_state_entries">
+        <item>Last</item>
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+    <string-array name="pref_startup_state_values">
+        <item>last</item>
+        <item>off</item>
+        <item>on</item>
+    </string-array>
+
+    <string name="pref_website">Author\'s website</string>
+    <string name="app_website">https://kjulio.net/</string>
+    <string name="pref_startup_state">Startup state</string>
+    <string name="pref_startup_state_summary">State of the torch at application launch</string>
+    <string name="pref_startup_state_default">last</string>
+    <string name="pref_nosleep_summary">Keep display on while using the torch</string>
+    <string name="pref_background">Run in background</string>
+    <string name="pref_background_summary">Torch stays on when pressing the home button or when switching apps</string>
+    <string name="pref_nosleep">Prevent display from sleeping</string>
+    <string name="app_about">Torch by kJulio version</string>
+    <string name="notif_title">Torch</string>
+    <string name="notif_text">Tap to return to torch</string>
+    <string name="pref_key_about_app">About</string>
+    <string name="pref_key_app_settings">Settings</string>
+    <string name="warning_no_flash">Couldn\'t detect any camera flash, Torch won\'t work.</string>
+</resources>
